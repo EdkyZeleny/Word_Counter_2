@@ -10,3 +10,7 @@ Just template.
 # How to test
 
 1. ./test.sh
+
+# How to run
+1. cd build/src/bin
+2. ./bin
