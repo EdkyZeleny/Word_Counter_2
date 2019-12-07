@@ -2,14 +2,50 @@
 
 #include "lib/sample.h"
 
-using template_repository::add;
-using template_repository::mul;
+using template_repository::pathfinder;
+using template_repository::words_checker;
 
 int main() {
-  int64_t a, b;
-  std::cin >> a >> b;
+  setlocale(LC_CTYPE, "rus");
+  
+  std::string path;
+  std::cout << "please, input there file source:" << std::endl;
+  std::cin >> path;
 
-  std::cout << "add: " << add(a, b) << std::endl;
-  std::cout << "mul: " << mul(a, b) << std::endl;
+  std::ifstream file_stream;
+  file_stream.open(path);
+
+  if (!pathfinder(path)){
+    std::cout << "cannot open file. try another path." << std::endl;
+  };
+
+  std::map<std::string, size_t> word_to_count;
+
+  std::string word;
+  
+  while (file_stream >> word) {
+    ++word_to_count[word];
+  }
+
+  if (!words_checker(word_to_count)){
+    std::cout<< "file is empty of words"<<std::endl;
+    ;}
+
+  std::vector<std::pair<std::string, size_t>> stats(word_to_count.begin(),
+                                     word_to_count.end());
+
+  std::sort(stats.begin(), stats.end(), [](auto& lhs, auto& rhs) {
+    if (lhs.second == rhs.second) {
+      return lhs.first < rhs.first;
+    }
+    return lhs.second > rhs.second;
+  });
+
+  for (auto& pair : stats) {
+    std::cout << "word: " << pair.first << " is used " << pair.second << " times"
+         << std::endl;
+  }
+
+  system ("pause");
   return 0;
 }
