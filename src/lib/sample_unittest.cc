@@ -2,15 +2,24 @@
 
 #include <gtest/gtest.h>
 
-using template_repository::add;
-using template_repository::mul;
+using template_repository::pathfinder;
+using template_repository::words_checker;
 
-TEST(SampleTest, Add) {
-  EXPECT_EQ(add(1, 2), 3);
-  EXPECT_EQ(add(2, 2), 4);
+
+TEST(SampleTest, pathfinder) {
+  EXPECT_EQ( pathfinder("rutext.txt"), true);
+  EXPECT_EQ( pathfinder("0"), false);
+  EXPECT_EQ( pathfinder("rutext.tx"), false);
 }
 
-TEST(SampleTest, Mul) {
-  EXPECT_EQ(mul(1, 2), 2);
-  EXPECT_EQ(mul(2, 2), 4);
+TEST(SampleTest, words_checker) {
+  
+  std::map<std::string, size_t> k;
+  ++k["слово"];
+
+  EXPECT_EQ(words_checker(k), true);
+  
+  k.clear();
+  
+  EXPECT_EQ(words_checker(k), false);
 }

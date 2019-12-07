@@ -1,12 +1,21 @@
-#include <cstdint>
+
+#include <iostream>
+#include <locale>
+#include <map>
+#include <vector>
+#include <cctype>
+#include <fstream>
+#include <algorithm>
+#include <string>
 
 #ifndef LIB_SAMPLE_H_
 #define LIB_SAMPLE_H_
 
 namespace template_repository {
 
-[[nodiscard]] int64_t add(const int64_t a, const int64_t b);
-[[nodiscard]] int64_t mul(const int64_t a, const int64_t b);
+[[nodiscard]] bool pathfinder(const std::string a);
+
+[[nodiscard]] bool words_checker(const std::map<std::string, size_t> b);
 
 }  // namespace template_repository
 
