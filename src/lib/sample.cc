@@ -2,10 +2,7 @@
 
 namespace template_repository {
 
-bool
-pathfinder(const std::string a)
-{
-
+bool pathfinder(const std::string a) {
   std::ifstream file_stream;
   file_stream.open(a);
 
@@ -16,9 +13,7 @@ pathfinder(const std::string a)
   }
 }
 
-bool
-words_checker(std::map<std::string, size_t> b)
-{
+bool words_checker(std::map<std::string, size_t> b) {
   if (b.size() > 0) {
     return true;
   } else {
@@ -26,4 +21,4 @@ words_checker(std::map<std::string, size_t> b)
   }
 }
 
-} // namespace qwerty
+}  // namespace qwerty
