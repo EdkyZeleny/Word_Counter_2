@@ -17,6 +17,6 @@ namespace template_repository {
 
 [[nodiscard]] bool words_checker(const std::map<std::string, size_t> b);
 
-} // namespace template_repository
+}  // namespace template_repository
 
-#endif // LIB_SAMPLE_H_
+#endif  // LIB_SAMPLE_H_
