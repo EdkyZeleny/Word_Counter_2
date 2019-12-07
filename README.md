@@ -32,6 +32,8 @@
 
 1. ./test.sh
 
++ replase in sample_unittest.cc line 10 "rutext.txt"-> your "rutext.txt" file path
+
 # How to run
 1. cd build/src/bin
 2. ./bin
