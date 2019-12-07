@@ -1,6 +1,6 @@
 #include "lib/sample.h"
 
-namespace Word_Counter
+namespace template_repository
 {
 
 bool pathfinder(const std::string a)
