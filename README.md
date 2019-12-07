@@ -1,4 +1,4 @@
-# Word_Counter_2.0
+# Word_Counter_2
 Задача:
 
 Необходимо разработать консольное приложение, которое принимает в качестве входных данных файл с текстом на русском языке, сортирует слова по частоте их использования в тексте и выводит результат в консоль в виде списка пар «слово – кол-во использований».
@@ -24,7 +24,7 @@
 
 # How to build
 
-1. git clone --recursive https://github.com/EdkyZeleny/Word_Counter_2.0.git
+1. git clone --recursive https://github.com/EdkyZeleny/Word_Counter_2.git
 2. ./bootstrap.sh
 3. ./build.sh
 
