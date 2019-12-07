@@ -30,4 +30,4 @@ bool words_checker(std::map<std::string, size_t> b)
     }
 }
 
-} // namespace Word_Counter
+} // namespace template_repository
