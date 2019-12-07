@@ -1,6 +1,6 @@
 #include "lib/sample.h"
 
-namespace template_repository
+namespace Word_Counter_2.0
 {
 
 bool pathfinder(const std::string a)
@@ -30,4 +30,4 @@ bool words_checker(std::map<std::string, size_t> b)
     }
 }
 
-} // namespace qwerty
+} // namespace Word_Counter_2.0
