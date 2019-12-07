@@ -30,11 +30,10 @@
 
 # How to test
 
-+ replase in sample_unittest.cc line 10 "rutext.txt"-> your "rutext.txt" file path
++ replase in src > lib > sample_unittest.cc > line 10 > "rutext.txt" to your "rutext.txt" file path !
 
 1. ./test.sh
 
-+ replase in sample_unittest.cc line 10 "rutext.txt"-> your "rutext.txt" file path
 
 # How to run
 1. cd build/src/bin
