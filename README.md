@@ -25,6 +25,10 @@
 # How to build
 
 1. git clone --recursive https://github.com/EdkyZeleny/Word_Counter_2.git
++ mkdir submodules
++ cd submodules
++ git submodule add https://github.com/google/googletest.git
+
 2. ./bootstrap.sh
 3. ./build.sh
 
